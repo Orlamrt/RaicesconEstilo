@@ -128,7 +128,7 @@ img {
     .cont-menu nav {
         transform: translateY(0%);
     }
-.avatar {
+img{
   position: absolute;
   top: 0;
   left: 0;
