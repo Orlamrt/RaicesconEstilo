@@ -45,13 +45,10 @@ body {
     float: right;
     line-height: 80px;
 }
-.container .avatar {
-    top: 5px;
-    left: 5px; 
-    width: 50px;
-    height: 50px;
-    
-  }
+
+
+
+
 
 .container .menu a {
     display: inline-block;
@@ -79,7 +76,7 @@ img {
 
 /* Contenido principal */
 #main-content2 {
-    background: white;
+    background-image: url("Imagenes/hueyapan.jpg");
     width: 100%;
     max-width: 100%;
     margin: 20px auto;
