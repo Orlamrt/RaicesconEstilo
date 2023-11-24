@@ -45,6 +45,13 @@ body {
     float: right;
     line-height: 80px;
 }
+.container .avatar {
+    top: 10px;
+    left: 10px; 
+    width: 10px;
+    height: 10px;
+    
+  }
 
 .container .menu a {
     display: inline-block;
@@ -128,10 +135,5 @@ img {
     .cont-menu nav {
         transform: translateY(0%);
     }
-    .avatar {
-        top: 1px;
-        left: 1px; 
-        width: 10px;
-        height: 10px;
-      }
+   
 }
