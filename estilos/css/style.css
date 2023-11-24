@@ -1,0 +1,193 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive, Arial, sans-serif;
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 80px;
+}
+
+/* Encabezado */
+.header {
+    background: #ffffff;
+    color: black;
+    height: 80px;
+    border-radius: 10px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo {
+    float: left;
+    line-height: 80px;
+}
+
+.container .btn-menu label {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.container .menu {
+    float: right;
+    line-height: 80px;
+}
+
+.container .menu a {
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.container .menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
+/* Menú lateral (para pantallas pequeñas) */
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    margin: auto;
+}
+
+/* Contenido principal */
+#main-content2 {
+    background: white;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+#main-content2 header,
+#main-content2 .content {
+    padding: 40px;
+}
+
+/* Pie de página */
+#main-footer {
+    background: #fff4f4;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    clear: both;
+}
+
+#main-footer p {
+    margin: 0;
+}
+
+#main-footer a {
+    color: black;
+}
+
+/* Consulta de medios para hacerlo responsive */
+@media (max-width: 768px) {
+    .container .btn-menu, .logo, .container .menu {
+        float: none;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .container .menu {
+        margin-top: 20px;
+    }
+
+    .container .menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    .cont-menu {
+        max-width: 100%;
+    }
+
+    .cont-menu nav {
+        transform: translateY(0%);
+    }
+}
