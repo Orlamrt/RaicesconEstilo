@@ -154,3 +154,27 @@ footer {
     max-width: 80%; /* Ancho máximo del párrafo */
     margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
 }
+.Mi {
+    display: flex;
+    justify-content: left; /* Alineación horizontal al centro */
+    align-items: left; /* Alineación vertical al centro */
+    height: 35px; /* 100% de la altura de la ventana */
+    text-align: left; /* Alineación del texto al centro si es necesario */
+}
+
+.Mi p {
+    max-width: 40%; /* Ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
+}
+.Vi {
+    display: flex;
+    justify-content: left; /* Alineación horizontal al centro */
+    align-items: left; /* Alineación vertical al centro */
+    height: 35px; /* 100% de la altura de la ventana */
+    text-align: left; /* Alineación del texto al centro si es necesario */
+}
+
+.Vi p {
+    max-width: 40%; /* Ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
+}
