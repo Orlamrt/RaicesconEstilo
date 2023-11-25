@@ -8,10 +8,11 @@ body {
     padding-top: 80px;
 }
 
+
 header {
     background: #ffffff;
     color: black;
-    height: 80px;
+    height: 90px;
     width: 100%;
     left: 0;
     top: 0;
@@ -19,12 +20,21 @@ header {
     box-shadow: 0 0 30px rgba(185, 173, 173, 0.653);
     z-index: 1;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
     transition: color 0.3s ease;
 }
-.nombre:hover{
+
+.nombre {
+    position: absolute;
+    left: 60px; /* Ajusta la distancia desde la izquierda según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nombre:hover {
     border-bottom: 2px solid #919090;
     padding-bottom: 5px;
 }
@@ -34,12 +44,9 @@ a{
     max-width: 1200px;
     margin: auto;
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-}
-.container h2 {
-
-    margin: 0;
 }
 
 .container .menu {
@@ -63,6 +70,7 @@ a{
     border-bottom: 2px solid #919090;
     padding-bottom: 5px;
 }
+
 
 .productos {
     display: flex;
@@ -293,7 +301,12 @@ footer {
 .container img {
     width: 50px; /* Ajusta el tamaño según sea necesario */
     margin-right: 1px; /* Espacio entre la imagen y el texto */
-    scale:150%;
+    scale:180%;
+    border-radius: 40px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container h2 {

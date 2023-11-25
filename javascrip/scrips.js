@@ -7,7 +7,7 @@ function mostrarDescripcion(elemento) {
   
     // Cambia el texto del botón
     var boton = elemento.querySelector('.ver-mas-btn');
-    boton.textContent = descripcion.classList.contains('visible') ? 'Ver menos' : 'Ver más';
+    boton.textContent = descripcion.classList.contains('visible') ? 'Ver menos' : 'Detalles';
   }
   const slider = document.querySelector('.slider');
 
