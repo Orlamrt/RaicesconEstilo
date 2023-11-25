@@ -37,8 +37,8 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.container h2 {
 
-.container h2{
     margin: 0;
 }
 
@@ -284,4 +284,18 @@ footer {
     padding: 20px;
     margin-top: 60px;
     clear: both;
+}
+.container {
+    display: flex;
+    align-items: left;
+}
+
+.container img {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 1px; /* Espacio entre la imagen y el texto */
+    scale:150%;
+}
+
+.container h2 {
+    margin: 0;
 }
