@@ -23,3 +23,6 @@ function mostrarDescripcion(elemento) {
   }
 
   setInterval(nextSlide, 3000); // Cambia de slide cada 3 segundos (ajusta según sea necesario)
+
+
+
