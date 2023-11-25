@@ -153,11 +153,11 @@ a {
 
 .slider-container {
     margin-top: 7%;
-    height: 60%;
+    height: 524px; /* Altura fija en píxeles */
+    width: 100%; /* Ancho del 100% */
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     overflow: hidden;
 }
 .slider {
@@ -188,7 +188,7 @@ footer {
     clear: both;
 }
 .Des {
-    margin-top: 30%;
+    margin-top: 35%;
     background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
     padding: 20px; /* Añade espacio alrededor del contenido */
    
@@ -236,14 +236,37 @@ footer {
     color: #333; /* Color del texto del encabezado */
     text-align: center;
 }
+
+.contenedor-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
 .tarjeta {
     max-width: 400px;
-    margin: 50px auto;
+    margin-top: 40px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.otro-contenedor {
+    max-width: 400px;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.otro-contenedor img{
+    width: 150px;
 }
 
 .tarjeta img {
@@ -266,6 +289,55 @@ footer {
 .tarjeta p.precio {
     font-size: 1.5em;
     margin: 10px 0;
+}
+
+.sustentable-contenedor {
+    max-width: 400px;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.relacion-moda-artesania {
+    background-color: white;
+    padding: 40px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.745);
+    margin-top: 20px;
+
+}
+
+.contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contenido h2 {
+    color: #333;
+}
+
+.contenido p {
+    color: #666;
+}
+
+.puntos-clave {
+    margin-top: 20px;
+}
+
+.puntos-clave h3 {
+    color: #333;
+}
+
+.puntos-clave ul {
+    list-style: none;
+    padding: 0;
+}
+
+.puntos-clave li {
+    color: #666;
+    margin-bottom: 10px;
 }
 
 .btn-comprar {
@@ -293,10 +365,7 @@ footer {
     margin-top: 60px;
     clear: both;
 }
-.container {
-    display: flex;
-    align-items: left;
-}
+
 
 .container img {
     width: 50px; /* Ajusta el tamaño según sea necesario */
@@ -311,4 +380,58 @@ footer {
 
 .container h2 {
     margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        height: 50px;
+    }
+
+    .nombre {
+        left: 10px;
+    }
+
+    .menu {
+        display: none; /* Ocultar menú principal en dispositivos móviles */
+    }
+
+    .menu-lateral {
+        display: block; /* Mostrar menú lateral en dispositivos móviles */
+    }
+
+    /* ... Agrega otros estilos específicos para dispositivos móviles si es necesario ... */
+}
+
+/* Estilos del menú lateral */
+
+.menu-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -200px; /* Oculta el menú fuera del área visible */
+    width: 200px;
+    height: 100%;
+    background: #fff; /* Puedes personalizar el color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.menu-lateral a:hover {
+    color: #919090;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked + .menu-lateral {
+    left: 0;
 }
