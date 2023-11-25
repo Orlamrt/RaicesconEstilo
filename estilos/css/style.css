@@ -17,8 +17,14 @@ header {
     left: 0;
     top: 0;
     position: fixed;
-    box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
+    box-shadow: 0 0 30px rgba(185, 173, 173, 0.653);
     z-index: 1;
+}
+.capa {
+width: 100%;
+position: relative;
+background: #ffff;
+box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
 }
 
 .container {
@@ -153,4 +159,46 @@ footer {
 .capa p {
     max-width: 80%; /* Ancho máximo del párrafo */
     margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
+}
+
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
