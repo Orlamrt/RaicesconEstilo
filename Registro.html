@@ -25,7 +25,34 @@
                 </nav>
             </div>
         </header>
-       
+        <div class="formulario-container" >
+            <h2>Ingresar Nuevo Producto</h2>
+            <form action="/ruta/del/servidor/para/procesar/el/formulario" method="POST">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+    
+                <label for="precio">Precio:</label>
+            <div class="precio-input">
+                <span>$</span>
+                <input type="number" id="precio" name="precio" step="0.01" required>
+            </div>
+    
+                <label for="imagen">Seleccionar Imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                <img id="vista-previa" src="#" alt="Vista Previa de la Imagen" style="display: none;">
+    
+    
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </div>
+    
+        <footer>
+            <p>&copy; 2023 Raices con Estilo</p>
+        </footer>
+        <script src="/javascrip/scrips.js"></script>
     </body>
 </html>
 </html>

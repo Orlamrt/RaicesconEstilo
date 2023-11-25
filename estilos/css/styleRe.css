@@ -1,11 +1,12 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: cursive, Arial, sans-serif;
     color: #666;
     font-size: 1em;
     line-height: 1.5em;
     padding-top: 80px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
 }
 
 
@@ -267,4 +268,44 @@ footer {
 
 .menu-toggle:checked + .menu-lateral {
     left: 0;
+}
+.formulario-container {
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: rgb(255,127, 52);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255,127, 52);
 }
