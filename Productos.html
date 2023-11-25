@@ -6,65 +6,58 @@
         <link rel="stylesheet" href="/estilos/css/stylePro.css">
     </head>
     <body>
+
         <header class="header">
             <div class="container">
-                <a href=""><h2 class="nombre">Raices con Estilo</h2></a>
-                <div class="container">
-                    <nav class="nav-main">
-                            <ul>
-                                 <li>
-                                    <a href="#Blusa de manta">Blusa de manta</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blusa de telar</a>
-                                </li>
-                                <li>
-                                    <a href="#">Gabanes</a>
-                                </li>
-                                <li>
-                                    <a href="#">Vestidos</a>
-                                </li>
-                                <li>
-                                    <a href="#">Joyeria</a>
-                                </li>
-                                <li>
-                                    <a href="#">More</a>
-                                </li>
-                            </ul>
-                    </nav>
-                    <hr>
+                <a href="#"><h2 class="nombre">Raices con Estilo</h2></a>
+                <nav class="menu">
+                    <a href="#">Inicio</a>
+                    <a href="Productos.html">Productos</a>
+                    <a href="#">Contactos</a>
                 </nav>
             </div>
-        </header>
+	</header>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="/Imagenes/proceso1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="/Imagenes/proceso2.jpeg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="/Imagenes/proceso3.jpeg" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="Imagenes/ropa1.jpg" alt="Producto 1 en Venta">
+            <h2>Nombre del Producto 1</h2>
+            <p>Descripción del producto 1 y características.</p>
+            <p class="price">Precio: $XX.XX</p>
+            <button class="Agregar">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="Imagenes/ropa1.jpg" alt="Producto 2 en Venta">
+            <h2>Nombre del Producto 2</h2>
+            <p>Descripción del producto 2 y características.</p>
+            <p class="price">Precio: $YY.YY</p>
+            <button class="Agregar">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="Imagenes/ropa1.jpg" alt="Producto 3 en Venta">
+            <h2>Nombre del Producto 3</h2>
+            <p>Descripción del producto 3 y características.</p>
+            <p class="price">Precio: $YY.YY</p>
+            <button class="Agregar">Agregar al Carrito</button>
+        </div>
 
-		<div class="slider-container">
-			<div class="slider">
-				<div class="slide">
-					<img src="/Imagenes/proceso1.jpg" alt="Slide 1">
-				</div>
-				<div class="slide">
-					<img src="/Imagenes/proceso2.jpeg" alt="Slide 2">
-				</div>
-				<div class="slide">
-					<img src="/Imagenes/proceso3.jpeg" alt="Slide 3">
-				</div>
-			</div>
-		</div>
-
-        <section id="Blusa de mata">
-            <article class="producto" onclick="mostrarDescripcion(this)">
-                <div class="imagen-container">
-                    <img src="/Imagenes/ropa1.jpg" alt="Producto 1">
-                </div>
-                <div class="descripcion">
-                    <h2>Vestido</h2>
-                    <p>Descripción del producto y detalles.</p>
-                    <span class="precio">$29.99</span>
-                </div>
-                <button class="ver-mas-btn">Ver más</button>
-            </article>
-        </section>
-    </body>
+    </div>
     <script src="/javascrip/scrips.js"></script>
+    <footer>
+        <p>&copy; 2023 Raices con Estilo</p>
+    </footer>
+    </body>
 </html>
 </html>
