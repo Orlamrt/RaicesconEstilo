@@ -95,6 +95,7 @@ a{
 
 .producto:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(89, 87, 87, 0.653);
 }
 
 .producto .ver-mas {
@@ -127,7 +128,6 @@ a{
     display: block;
     position: absolute;
     left: 30%;
-    top: 110%;
     margin: 10px auto;
     background-color: #3498db;
     color: white;
@@ -155,6 +155,7 @@ a{
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(89, 87, 87, 0.653);
 }
 
 .slide {
@@ -167,39 +168,19 @@ a{
     object-fit: cover;
 }
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
 
-footer {
-    background: #fff4f4;
-    bottom: 0;
-    width: 100%;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    margin-top: 60px;
-    clear: both;
-}
 
 .Des {
     margin-top: 30%;
     background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
     padding: 20px; /* Añade espacio alrededor del contenido */
+   
 }
 
-.Descrip {
-    max-width: 800px; /* Ancho máximo del contenido de descripción */
+.Descrip { /* Ancho máximo del contenido de descripción */
     margin: 0 auto; /* Centra el contenido horizontalmente */
+    text-align: justify;
+    width: 80%;
 }
 
 .Descrip h2 {
@@ -237,4 +218,15 @@ footer {
 .NO h2 {
     color: #333; /* Color del texto del encabezado */
     text-align: center;
+}
+
+footer {
+    background: #fff4f4;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    clear: both;
 }
