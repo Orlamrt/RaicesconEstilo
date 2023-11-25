@@ -71,7 +71,7 @@ a{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-top: 8%;
+    margin-top: 1%;
 }
 
 .producto {
@@ -232,7 +232,9 @@ footer {
     margin-top: 5%;
     background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
     padding: 20px; /* Añade espacio alrededor del contenido */
+    text-align: center;
 }
 .NO h2 {
     color: #333; /* Color del texto del encabezado */
+    text-align: center;
 }
