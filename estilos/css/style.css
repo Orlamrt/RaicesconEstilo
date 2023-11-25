@@ -129,7 +129,7 @@ a{
     position: absolute;
     left: 30%;
     margin: 10px auto;
-    background-color: #3498db;
+    background-color: rgb(255,127, 52);
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -228,7 +228,53 @@ footer {
     color: #333; /* Color del texto del encabezado */
     text-align: center;
 }
+.tarjeta {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.tarjeta img {
+    width: 150px;
+}
+
+.tarjeta h2 {
+    color: #333;
+}
+
+.tarjeta ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tarjeta li {
+    margin: 10px 0;
+}
+
+.tarjeta p.precio {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.btn-comprar {
+    background-color: rgb(255,127, 52);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: rgb(230, 111, 42);
+    transform: s;
+}
 footer {
     background: #fff4f4;
     bottom: 0;
