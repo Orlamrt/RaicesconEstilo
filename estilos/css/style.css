@@ -17,8 +17,14 @@ header {
     left: 0;
     top: 0;
     position: fixed;
-    box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
+    box-shadow: 0 0 30px rgba(185, 173, 173, 0.653);
     z-index: 1;
+}
+.capa {
+width: 100%;
+position: relative;
+background: #ffff;
+box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
 }
 
 .container {
@@ -58,31 +64,32 @@ header {
 
 .productos {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas si no caben en una sola fila */
-    justify-content: space-around; /* Alinea los elementos horizontalmente con espacio entre ellos */
+    flex-wrap: wrap;
+    justify-content: left;
     padding: 10px;
+    width: 200px;
+    height: auto;
 }
 
-/* Estilo de cada artículo de producto */
 .producto {
-    width: 200px; /* Ancho deseado para cada artículo */
-    margin: 10px;
-    border: 1px solid #ddd;
-    padding: 5px;
-    text-align: center;
-    cursor: pointer;
     position: relative;
-    transition: transform 0.4s ease-in-out;
+    border: 1px solid #ddd;
+    padding: 5px; 
+    margin: 15px;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el producto para indicar que es interactivo */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(185, 173, 173, 0.653);
+}
+
+.producto .imagen-container {
+    position: relative;
 }
 
 .producto img {
-    max-width: 100%;
+    max-width: 100%; 
     height: auto;
     transition: transform 0.4s ease-in-out;
-}
-
-.producto:hover {
-    transform: scale(1.1);
 }
 
 .producto .ver-mas {
@@ -95,6 +102,10 @@ header {
     font-size: 1.2em;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
+}
+
+.producto:hover img {
+    transform: scale(1.1);
 }
 
 .producto:hover .ver-mas {
@@ -149,27 +160,5 @@ footer {
     max-width: 80%; /* Ancho máximo del párrafo */
     margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
 }
-.Mi {
-    display: flex;
-    justify-content: left; /* Alineación horizontal al centro */
-    align-items: left; /* Alineación vertical al centro */
-    height: 35px; /* 100% de la altura de la ventana */
-    text-align: left; /* Alineación del texto al centro si es necesario */
-}
 
-.Mi p {
-    max-width: 40%; /* Ancho máximo del párrafo */
-    margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
-}
-.Vi {
-    display: flex;
-    justify-content: left; /* Alineación horizontal al centro */
-    align-items: left; /* Alineación vertical al centro */
-    height: 35px; /* 100% de la altura de la ventana */
-    text-align: left; /* Alineación del texto al centro si es necesario */
-}
 
-.Vi p {
-    max-width: 40%; /* Ancho máximo del párrafo */
-    margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
-}
