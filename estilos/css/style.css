@@ -20,14 +20,23 @@ header {
     box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
     z-index: 1;
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al inicio y al final del contenedor */
+    align-items: center; /* Centra verticalmente los elementos */
 }
+
+.container h1 {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+}
+
 .container .menu {
-    float: right;
     line-height: 80px;
+    float: right;
 }
 
 .container .menu a {
@@ -46,6 +55,7 @@ header {
     border-bottom: 2px solid #919090;
     padding-bottom: 5px;
 }
+
 .productos {
     display: flex;
     flex-wrap: wrap;
@@ -59,9 +69,11 @@ header {
     position: relative;
     border: 1px solid #ddd;
     padding: 5px; 
-    margin: 10px;
+    margin: 15px;
     text-align: center;
     cursor: pointer; /* Cambia el cursor al pasar sobre el producto para indicar que es interactivo */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(185, 173, 173, 0.653);
 }
 
 .producto .imagen-container {
