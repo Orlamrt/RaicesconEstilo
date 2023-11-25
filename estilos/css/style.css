@@ -12,7 +12,6 @@ header {
     background: #ffffff;
     color: black;
     height: 80px;
-    border-radius: 10px;
     width: 100%;
     left: 0;
     top: 0;
@@ -20,11 +19,14 @@ header {
     box-shadow: 0 0 30px rgba(185, 173, 173, 0.653);
     z-index: 1;
 }
-.capa {
-width: 100%;
-position: relative;
-background: #ffff;
-box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
+a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+.nombre:hover{
+    border-bottom: 2px solid #919090;
+    padding-bottom: 5px;
 }
 
 .container {
@@ -32,12 +34,12 @@ box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between; /* Alinea los elementos al inicio y al final del contenedor */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container h1 {
-    margin: 0; /* Elimina el margen predeterminado del h1 */
+    margin: 0;
 }
 
 .container .menu {
@@ -62,17 +64,18 @@ box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
     padding-bottom: 5px;
 }
 
-/* Estilo de la sección de productos */
 .productos {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas si no caben en una sola fila */
-    justify-content: space-around; /* Alinea los elementos horizontalmente con espacio entre ellos */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
+    margin-top: 28%;
 }
 
-/* Estilo de cada artículo de producto */
 .producto {
-    width: 200px; /* Ancho deseado para cada artículo */
+    width: 200px;
     margin: 10px;
     border: 1px solid #ddd;
     padding: 5px;
@@ -80,6 +83,8 @@ box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
     cursor: pointer;
     position: relative;
     transition: transform 0.4s ease-in-out;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
 }
 
 .producto img {
@@ -115,12 +120,15 @@ box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
 }
 
 .producto .descripcion.visible {
-    max-height: 200px; /* Ajusta la altura máxima según sea necesario */
+    max-height: 200px;
 }
 
 .ver-mas-btn {
     display: block;
-    margin: 10px auto; /* Centra el botón horizontalmente */
+    position: absolute;
+    left: 30%;
+    top: 110%;
+    margin: 10px auto;
     background-color: #3498db;
     color: white;
     padding: 10px;
@@ -128,33 +136,64 @@ box-shadow: 0 0 20px rgba(185, 173, 173, 0.653);
     border: none;
     cursor: pointer;
     transition: opacity 0.4s ease-in-out;
+    
 }
 
 .ver-mas-btn:hover {
     opacity: 0.8;
 }
 
+.slider-container {
+    margin-top: 7%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
+    background: #fff4f4;
     bottom: 0;
     width: 100%;
-}
-.capa {
-    display: flex;
-    justify-content: center; /* Alineación horizontal al centro */
-    align-items: center; /* Alineación vertical al centro */
-    height: 70px; /* 100% de la altura de la ventana */
-    text-align: center; /* Alineación del texto al centro si es necesario */
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    clear: both;
 }
 
-.capa p {
-    max-width: 80%; /* Ancho máximo del párrafo */
-    margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
+.mi{
+
 }
-
-
+.vi{
+    position: relative;
+}

@@ -9,5 +9,17 @@ function mostrarDescripcion(elemento) {
     var boton = elemento.querySelector('.ver-mas-btn');
     boton.textContent = descripcion.classList.contains('visible') ? 'Ver menos' : 'Ver más';
   }
-  let currentIndex = 0;
+  const slider = document.querySelector('.slider');
 
+  function nextSlide() {
+      const firstSlide = slider.children[0];
+      slider.style.transition = 'transform 0.5s ease-in-out';
+      slider.style.transform = 'translateX(' + (-firstSlide.offsetWidth) + 'px)';
+      setTimeout(() => {
+          slider.style.transition = 'none';
+          slider.appendChild(firstSlide);
+          slider.style.transform = 'translateX(0)';
+      }, 500);
+  }
+
+  setInterval(nextSlide, 3000); // Cambia de slide cada 3 segundos (ajusta según sea necesario)
