@@ -58,32 +58,31 @@ header {
 
 .productos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas si no caben en una sola fila */
+    justify-content: space-around; /* Alinea los elementos horizontalmente con espacio entre ellos */
     padding: 10px;
-    width: 200px;
-    height: auto;
 }
 
+/* Estilo de cada artículo de producto */
 .producto {
-    position: relative;
+    width: 200px; /* Ancho deseado para cada artículo */
+    margin: 10px;
     border: 1px solid #ddd;
-    padding: 5px; 
-    margin: 15px;
+    padding: 5px;
     text-align: center;
-    cursor: pointer; /* Cambia el cursor al pasar sobre el producto para indicar que es interactivo */
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(185, 173, 173, 0.653);
-}
-
-.producto .imagen-container {
+    cursor: pointer;
     position: relative;
+    transition: transform 0.4s ease-in-out;
 }
 
 .producto img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     transition: transform 0.4s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.1);
 }
 
 .producto .ver-mas {
@@ -96,10 +95,6 @@ header {
     font-size: 1.2em;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-}
-
-.producto:hover img {
-    transform: scale(1.1);
 }
 
 .producto:hover .ver-mas {
