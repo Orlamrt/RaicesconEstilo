@@ -128,18 +128,19 @@ a{
     text-align: center;
     border: none;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 20px; 
+    background-color: rgb(255,127, 52);
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(89, 87, 87, 0.653);
 }
 .Agregar:hover{
-    background-color: #2980b9;
+    background-color:  rgb(230, 111, 42);
     color: #fff;
 }
 .Agregar:active {
-    background-color: #1f618d;
-    border: 2px solid #1f618d;
+    background-color: rgb(230, 111, 42);
+    border: 2px solid  rgb(230, 111, 42);
     color: #fff;
 }
 
