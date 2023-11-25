@@ -119,6 +119,7 @@ header {
     opacity: 0.8;
 }
 
+
 footer {
     background-color: #333;
     color: white;
@@ -127,4 +128,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.capa {
+    display: flex;
+    justify-content: center; /* Alineación horizontal al centro */
+    align-items: center; /* Alineación vertical al centro */
+    height: 70px; /* 100% de la altura de la ventana */
+    text-align: center; /* Alineación del texto al centro si es necesario */
+}
+
+.capa p {
+    max-width: 80%; /* Ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente dentro de .capa */
 }
