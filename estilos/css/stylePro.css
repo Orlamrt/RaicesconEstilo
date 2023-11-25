@@ -177,51 +177,31 @@ footer {
     margin-top: 60px;
     clear: both;
 }
-
-.Des {
-    margin-top: 30%;
-    background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
-    padding: 20px; /* Añade espacio alrededor del contenido */
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
 }
-
-.Descrip {
-    max-width: 800px; /* Ancho máximo del contenido de descripción */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+.nav-brand{
+    width: 50px;
 }
-
-.Descrip h2 {
-    color: #333; /* Color del texto del encabezado */
+/*nav left*/
+.nav-main ul{
+    display: flex;
 }
-
-.Descrip p {
-    color: #666; /* Color del texto del párrafo */
+.nav-main ul li{
+    padding: 10px;
 }
-
-.Vis {
-    margin-top: 5%;
-    background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
-    padding: 20px; /* Añade espacio alrededor del contenido */
+.nav-main ul li a{
+    padding: 6px;
 }
-
-.Visi {
-    max-width: 800px; /* Ancho máximo del contenido de descripción */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #fff;
 }
-
-.Visi h2 {
-    color: #333; /* Color del texto del encabezado */
-}
-
-.Vis p {
-    color: #666; /* Color del texto del párrafo */
-}
-.NO {
-    margin-top: 5%;
-    background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
-    padding: 20px; /* Añade espacio alrededor del contenido */
-    text-align: center;
-}
-.NO h2 {
-    color: #333; /* Color del texto del encabezado */
-    text-align: center;
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
 }
