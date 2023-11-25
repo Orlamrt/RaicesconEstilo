@@ -71,7 +71,7 @@ a{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-top: 28%;
+    margin-top: 8%;
 }
 
 .producto {
@@ -191,9 +191,48 @@ footer {
     clear: both;
 }
 
-.mi{
-
+.Des {
+    margin-top: 30%;
+    background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
+    padding: 20px; /* Añade espacio alrededor del contenido */
 }
-.vi{
-    position: relative;
+
+.Descrip {
+    max-width: 800px; /* Ancho máximo del contenido de descripción */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.Descrip h2 {
+    color: #333; /* Color del texto del encabezado */
+}
+
+.Descrip p {
+    color: #666; /* Color del texto del párrafo */
+}
+
+.Vis {
+    margin-top: 5%;
+    background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+.Visi {
+    max-width: 800px; /* Ancho máximo del contenido de descripción */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.Visi h2 {
+    color: #333; /* Color del texto del encabezado */
+}
+
+.Vis p {
+    color: #666; /* Color del texto del párrafo */
+}
+.NO {
+    margin-top: 5%;
+    background-color: #fdfafa; /* Color de fondo del contenedor de descripción */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+}
+.NO h2 {
+    color: #333; /* Color del texto del encabezado */
 }
